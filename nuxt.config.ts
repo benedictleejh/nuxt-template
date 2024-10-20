@@ -5,6 +5,14 @@ export default defineNuxtConfig({
     '@nuxtjs/stylelint-module'
   ],
 
+  components: [
+    {
+      // Avoid auto path prefixing to component names to allow easier organisation
+      path: '~/components',
+      pathPrefix: false
+    }
+  ],
+
   imports: {
     dirs: [
       '../types' // Add types folder to auto-imports
