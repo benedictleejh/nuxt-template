@@ -16,10 +16,10 @@
     "test:unit": "vitest --run",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e": "playwright test",
-    "lint": "pnpm lint:ts && pnpm lint:sass",
+    "lint": "pnpm lint:es && pnpm lint:style",
     "lint:es": "eslint --flag unstable_ts_config .",
     "lint:style": "stylelint  \"**/*.{css,less,scss,sass,pcss,postcss,sss,vue}\"",
-    "lint:fix": "pnpm lint:ts:fix && pnpm lint:sass:fix",
+    "lint:fix": "pnpm lint:es:fix && pnpm lint:style:fix",
     "lint:es:fix": "eslint --fix --flag unstable_ts_config .",
     "lint:style:fix": "stylelint --fix \"**/*.{css,less,scss,sass,pcss,postcss,sss,vue}\""
   },
