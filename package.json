@@ -18,10 +18,10 @@
     "test:e2e": "playwright test",
     "lint": "pnpm lint:ts && pnpm lint:sass",
     "lint:es": "eslint --flag unstable_ts_config .",
-    "lint:style": "stylelint \"**/*.sass\"",
+    "lint:style": "stylelint  \"**/*.{css,less,scss,sass,pcss,postcss,sss,vue}\"",
     "lint:fix": "pnpm lint:ts:fix && pnpm lint:sass:fix",
     "lint:es:fix": "eslint --fix --flag unstable_ts_config .",
-    "lint:style:fix": "stylelint --fix \"**/*.sass\""
+    "lint:style:fix": "stylelint --fix \"**/*.{css,less,scss,sass,pcss,postcss,sss,vue}\""
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.1.0",
