@@ -14,6 +14,11 @@
       "source.fixAll.eslint": "explicit"
     }
   },
+  "[pug]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
   "[vue]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"
@@ -22,6 +27,7 @@
   "eslint.validate": [
     "javascript",
     "typescript",
+    "pug",
     "vue"
   ],
   "stylelint.validate": [
