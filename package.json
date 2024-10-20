@@ -15,7 +15,13 @@
     "test:unit:watch": "vitest",
     "test:unit": "vitest --run",
     "test:e2e:ui": "playwright test --ui",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "lint": "pnpm lint:ts && pnpm lint:sass",
+    "lint:es": "eslint --flag unstable_ts_config .",
+    "lint:style": "stylelint \"**/*.sass\"",
+    "lint:fix": "pnpm lint:ts:fix && pnpm lint:sass:fix",
+    "lint:es:fix": "eslint --fix --flag unstable_ts_config .",
+    "lint:style:fix": "stylelint --fix \"**/*.sass\""
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.1.0",
@@ -24,7 +30,6 @@
     "nuxt": "^3.13.2",
     "vue": "latest"
   },
-  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
   "devDependencies": {
     "@csstools/postcss-sass": "^5.1.1",
     "@nuxt/test-utils": "^3.14.4",
@@ -47,5 +52,6 @@
     "typescript": "^5.6.3",
     "vitest": "^2.1.3",
     "vue-tsc": "^2.1.6"
-  }
+  },
+  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
 }
