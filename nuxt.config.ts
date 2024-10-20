@@ -5,6 +5,12 @@ export default defineNuxtConfig({
     '@nuxtjs/stylelint-module'
   ],
 
+  imports: {
+    dirs: [
+      '../types' // Add types folder to auto-imports
+    ]
+  },
+
   devtools: {
     enabled: true
   },
