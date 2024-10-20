@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxtjs/stylelint-module',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
+    '@nuxt/test-utils/module'
   ],
 
   components: [
