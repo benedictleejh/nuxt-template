@@ -23,5 +23,16 @@
     "javascript",
     "typescript",
     "vue"
-  ]
+  ],
+  "stylelint.validate": [
+    "vue",
+    "css",
+    "scss",
+    "sass",
+    "postcss"
+  ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "postcss.validate": false
 }

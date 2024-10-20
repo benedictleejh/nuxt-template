@@ -6,6 +6,9 @@
 .cache
 dist
 
+# Stylelint
+.stylelintcache
+
 # Node dependencies
 node_modules
 
