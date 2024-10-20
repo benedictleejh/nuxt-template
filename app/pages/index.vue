@@ -2,5 +2,5 @@
 </script>
 
 <template lang="pug">
-  nuxt-welcome
+  StarterWelcome
 </template>
