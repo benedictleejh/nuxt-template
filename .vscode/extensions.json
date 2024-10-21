@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "vunguyentuan.vscode-css-variables",
+    "formulahendry.auto-close-tag",
+    "editorconfig.editorconfig",
+    "irongeek.vscode-env",
+    "dbaeumer.vscode-eslint",
+    "antfu.goto-alias",
+    "nuxtr.nuxtr-vscode",
+    "vunguyentuan.vscode-postcss",
+    "samatech.postcss-vue",
+    "syler.sass-indented",
+    "stylelint.vscode-stylelint",
+    "vue.volar",
+    "praburangki.nuxt-snippets"
+  ]
+}
