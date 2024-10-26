@@ -12,6 +12,7 @@
     "syler.sass-indented",
     "stylelint.vscode-stylelint",
     "vue.volar",
-    "praburangki.nuxt-snippets"
+    "praburangki.nuxt-snippets",
+    "ms-playwright.playwright"
   ]
 }
