@@ -20,6 +20,9 @@ logs
 playwright-report
 test-results
 
+# Use package.yaml instead
+package.json
+
 # Misc
 .DS_Store
 .fleet
