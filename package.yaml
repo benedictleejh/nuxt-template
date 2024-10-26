@@ -41,6 +41,10 @@ scripts:
   pretest:unit: pnpm create-package-json
   posttest:unit: rm package.json
 
+  # Workaround for Nuxt needing package.json to typecheck properly
+  pretypecheck: pnpm create-package-json
+  posttypecheck: rm package.json
+
 dependencies:
   # For linting
   "@nuxt/eslint": ^0.6.0
