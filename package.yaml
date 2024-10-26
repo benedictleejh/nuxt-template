@@ -29,7 +29,7 @@ scripts:
   lint:style:fix: pnpm lint:style --fix
 
   # Task to create package.json for tools that need it
-  create-package-json: cat package.yaml | yaml --json --indent 2 --single > package.json
+  create-package-json: pnpx jiti scripts/compile-package-json.ts
 
   # Workaround for:
   # - ESLint requiring a package.json
