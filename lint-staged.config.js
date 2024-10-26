@@ -6,8 +6,10 @@ export default {
   '*.{css,less,scss,sass,pcss,postcss,sss,vue}': stagedFiles => [
     `stylelint ${stagedFiles.join(' ')}`
   ],
-  '*.*': () => [
-    'pnpm typecheck',
+  '*.{*,1}': () => [
+    'pnpm typecheck'
+  ],
+  '*.{*,2}': () => [
     'pnpm test:unit'
   ]
 }
