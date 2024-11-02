@@ -17,7 +17,7 @@ export default defineNuxtConfig({
 
   imports: {
     dirs: [
-      '../types' // Add types folder to auto-imports
+      '../shared/**' // Add types folder to auto-imports
     ]
   },
 
@@ -30,6 +30,14 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-04-03',
+
+  nitro: {
+    imports: {
+      dirs: [
+        'shared/**'
+      ]
+    }
+  },
 
   vite: {
     css: {
