@@ -11,7 +11,7 @@ export default defineVitestConfig({
     },
     exclude: [
       ...defaultExclude,
-      './tests' // Exclude e2e tests, as we test those with Playwright
+      './tests/e2e' // Exclude e2e tests, as we test those with Playwright
     ]
   }
 })

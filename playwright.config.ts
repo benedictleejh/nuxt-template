@@ -5,12 +5,15 @@ import { isCI, isWindows } from 'std-env'
 
 const devicesToTest = [
   'Desktop Chrome'
+
   // Test against other common browser engines.
   // 'Desktop Firefox',
   // 'Desktop Safari',
+
   // Test against mobile viewports.
   // 'Pixel 5',
   // 'iPhone 12',
+
   // Test against branded browsers.
   // { ...devices['Desktop Edge'], channel: 'msedge' },
   // { ...devices['Desktop Chrome'], channel: 'chrome' },
@@ -18,7 +21,7 @@ const devicesToTest = [
 
 /* See https://playwright.dev/docs/test-configuration. */
 export default defineConfig<ConfigOptions>({
-  testDir: './tests',
+  testDir: './tests/e2e',
 
   /* Run tests in files in parallel */
   fullyParallel: true,
