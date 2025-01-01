@@ -23,7 +23,7 @@ scripts:
 
   lint: pnpm lint:es && pnpm lint:style
   lint:es: eslint --flag unstable_ts_config --max-warnings 0
-  lint:style: stylelint  "**/*.{css,less,scss,sass,pcss,postcss,sss,vue}"
+  lint:style: stylelint  "**/*.{css,less,scss,sass,styl,stylus,pcss,postcss,sss,vue}"
   lint:fix: pnpm lint:es:fix && pnpm lint:style:fix
   lint:es:fix: pnpm lint:es --fix
   lint:style:fix: pnpm lint:style --fix
