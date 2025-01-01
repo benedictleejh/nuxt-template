@@ -39,52 +39,52 @@ scripts:
 
 dependencies:
   # For linting
-  "@nuxt/eslint": ^0.6.1
+  "@nuxt/eslint": ^0.7.4
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
-  "@eslint/eslintrc": ^3.1.0 # To convert eslint-plugin-vue-pug to new ESLint flat config format
+  "@eslint/eslintrc": ^3.2.0 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   "@types/eslint__eslintrc": ^2.1.2
-  yaml: ^2.6.0
+  yaml: ^2.7.0
 
-  "@nuxt/fonts": ^0.10.2
+  "@nuxt/fonts": ^0.10.3
 
-  nuxt: ^3.14.159
+  nuxt: ^3.15.0
   vue: latest
 
 devDependencies:
   # Enable use of TypeScript config files in various tools
-  jiti: ^2.4.0
+  jiti: ^2.4.2
 
   # To use Sass
-  sass-embedded: ^1.80.6
+  sass-embedded: ^1.83.0
 
   # For testing
-  "@nuxt/test-utils": ^3.14.4
-  "@playwright/test": ^1.48.2
+  "@nuxt/test-utils": ^3.15.1
+  "@playwright/test": ^1.49.1
   "@vue/test-utils": ^2.4.6
   jsdom: ^25.0.1
-  std-env: ^3.7.0
-  vitest: ^2.1.4
+  std-env: ^3.8.0
+  vitest: ^2.1.8
 
   # For code quality checks on pre-commit
-  husky: ^9.1.6
+  husky: ^9.1.7
   "@types/lint-staged": ^13.3.0
-  lint-staged: ^15.2.10
+  lint-staged: ^15.3.0
 
   # To use Pug in Vue templates
-  "@vue/language-plugin-pug": ^2.1.10 # Enables autocompletion for Vue components in Pug templates
+  "@vue/language-plugin-pug": ^2.2.0 # Enables autocompletion for Vue components in Pug templates
   pug: ^3.0.3
 
   # To enable typechecking
-  typescript: ^5.6.3
-  vue-tsc: ^2.1.10
+  typescript: ^5.7.2
+  vue-tsc: ^2.2.0
 
   # For linting stylesheets
   "@nuxtjs/stylelint-module": ^5.2.0
-  stylelint: ^16.10.0
-  stylelint-config-standard-scss: ^13.1.0
+  stylelint: ^16.12.0
+  stylelint-config-standard-scss: ^14.0.0
   stylelint-config-standard-vue: ^1.0.0
   # Use SugarSS as a pseudo-sass parser due to postcss-sass not working with media queries
   postcss-sass: npm:sugarss@latest
   postcss-html: ^1.7.0
 
-packageManager: pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee
+packageManager: pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321
