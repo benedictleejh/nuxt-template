@@ -9,10 +9,5 @@ const compat = new FlatCompat({ baseDirectory: __dirname })
 
 export default withNuxt(
   // Your custom configs here
-  ...compat.extends('plugin:vue-pug/vue3-recommended'),
-  {
-    rules: {
-      '@stylistic/comma-dangle': ['error', 'never']
-    }
-  }
+  ...compat.extends('plugin:vue-pug/vue3-recommended')
 )
