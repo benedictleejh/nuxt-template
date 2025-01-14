@@ -35,6 +35,16 @@ export default defineNuxtConfig({
     }
   },
 
+  typescript: {
+    tsConfig: {
+      vueCompilerOptions: {
+        plugins: [
+          '@vue/language-plugin-pug'
+        ]
+      }
+    }
+  },
+
   eslint: {
     config: {
       stylistic: {
