@@ -2,6 +2,7 @@ import { fileURLToPath } from 'node:url'
 import { defineConfig, devices } from '@playwright/test'
 import type { ConfigOptions } from '@nuxt/test-utils/playwright'
 import { isCI, isWindows } from 'std-env'
+import type { MonocartReporterOptions } from 'monocart-reporter'
 
 const devicesToTest = [
   'Desktop Chrome'
@@ -38,7 +39,14 @@ export default defineConfig<ConfigOptions>({
   timeout: isWindows ? 60000 : undefined,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    [
+      'monocart-reporter',
+      {
+        outputFile: './playwright-report/index.html'
+      } satisfies MonocartReporterOptions
+    ]
+  ],
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {

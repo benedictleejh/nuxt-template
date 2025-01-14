@@ -64,6 +64,7 @@ devDependencies:
   jsdom: ^26.0.0
   std-env: ^3.8.0
   vitest: ^3.0.0-beta.4
+  "monocart-reporter": ^2.9.13
 
   # For code quality checks on pre-commit
   husky: ^9.1.7
