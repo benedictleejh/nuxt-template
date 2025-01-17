@@ -68,8 +68,7 @@ devDependencies:
 
   # For code quality checks on pre-commit
   husky: ^9.1.7
-  "@types/lint-staged": ^13.3.0
-  lint-staged: ^15.3.0
+  lint-staged: ^15.4.1
 
   # To use Pug in Vue templates
   "@vue/language-plugin-pug": ^2.2.0 # Enables autocompletion for Vue components in Pug templates
