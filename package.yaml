@@ -16,6 +16,8 @@ scripts:
 
   prepare: husky
 
+  clean: pnpx jiti scripts/clean.ts
+
   test:unit:watch: vitest
   test:unit: vitest --run
   test:e2e:ui: playwright test --ui
