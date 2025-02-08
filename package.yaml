@@ -41,7 +41,7 @@ scripts:
 
 dependencies:
   # For linting
-  "@nuxt/eslint": ^1.0.0
+  "@nuxt/eslint": ^1.0.1
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
   "@eslint/eslintrc": ^3.2.0 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   "@types/eslint__eslintrc": ^2.1.2
@@ -65,7 +65,7 @@ devDependencies:
   "@vue/test-utils": ^2.4.6
   jsdom: ^26.0.0
   std-env: ^3.8.0
-  vitest: ^3.0.4
+  vitest: ^3.0.5
   "monocart-reporter": ^2.9.13
 
   # For code quality checks on pre-commit
