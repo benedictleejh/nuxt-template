@@ -31,13 +31,13 @@ scripts:
   lint:style:fix: pnpm lint:style --fix
 
   # Task to create package.json for tools that need it
-  create-package-json: pnpx jiti scripts/compile-package-json.ts
+  compile:packageJson: pnpx jiti scripts/compilePackageJson.ts
 
   # Workaround for:
   # - ESLint requiring a package.json
   # - Vitest to load ESM modules, as it needs to see "type": "module" in package.json
   # - Nuxt needing package.json to typecheck properly
-  pnpm:devPreinstall: pnpm create-package-json
+  pnpm:devPreinstall: pnpm compile:packageJson
 
 dependencies:
   # For linting
