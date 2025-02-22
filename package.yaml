@@ -4,7 +4,7 @@ type: module
 
 engines:
   node: ">= 22"
-  pnpm: ">= 9"
+  pnpm: ">= 10.4.1"
 
 scripts:
   build: nuxt build
@@ -41,10 +41,11 @@ scripts:
 
 dependencies:
   # For linting
-  "@nuxt/eslint": ^1.0.1
+  ## This is in dependencies due to how Nuxt builds
+  "@nuxt/eslint": ^1.1.0
+  eslint: ^9.21.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
-  "@eslint/eslintrc": ^3.2.0 # To convert eslint-plugin-vue-pug to new ESLint flat config format
-  "@types/eslint__eslintrc": ^2.1.2
+  "@eslint/eslintrc": ^3.3.0 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   yaml: ^2.7.0
 
   "@nuxt/fonts": ^0.10.3
@@ -57,28 +58,28 @@ devDependencies:
   jiti: ^2.4.2
 
   # To use Sass
-  sass-embedded: ^1.83.4
+  sass-embedded: ^1.85.0
 
   # For testing
-  "@nuxt/test-utils": ^3.15.4
+  "@nuxt/test-utils": ^3.17.0
   "@playwright/test": ^1.50.1
   "@vue/test-utils": ^2.4.6
   jsdom: ^26.0.0
   std-env: ^3.8.0
-  vitest: ^3.0.5
-  "monocart-reporter": ^2.9.13
+  vitest: ^3.0.6
+  "monocart-reporter": ^2.9.15
 
   # For code quality checks on pre-commit
   husky: ^9.1.7
   lint-staged: ^15.4.3
 
   # To use Pug in Vue templates
-  "@vue/language-plugin-pug": ^2.2.0 # Enables autocompletion for Vue components in Pug templates
+  "@vue/language-plugin-pug": ^2.2.2 # Enables autocompletion for Vue components in Pug templates
   pug: ^3.0.3
 
   # To enable typechecking
   typescript: ^5.7.3
-  vue-tsc: ^2.2.0
+  vue-tsc: ^2.2.2
 
   # For linting stylesheets
   "@nuxtjs/stylelint-module": ^5.2.0
@@ -89,4 +90,4 @@ devDependencies:
   postcss-sass: npm:sugarss@latest
   postcss-html: ^1.8.0
 
-packageManager: pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0
+packageManager: pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af
