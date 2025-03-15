@@ -4,7 +4,7 @@ type: module
 
 engines:
   node: ">= 22"
-  pnpm: ">= 10.6.1"
+  pnpm: ">= 10.6.3"
 
 scripts:
   build: nuxt build
@@ -42,13 +42,13 @@ scripts:
 dependencies:
   # For linting
   ## This is in dependencies due to how Nuxt builds
-  "@nuxt/eslint": ^1.1.0
+  "@nuxt/eslint": ^1.2.0
   eslint: ^9.22.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
   "@eslint/eslintrc": ^3.3.0 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   yaml: ^2.7.0
 
-  "@nuxt/fonts": ^0.10.3
+  "@nuxt/fonts": ^0.11.0
 
   nuxt: ^3.16.0
   vue: latest
@@ -61,17 +61,17 @@ devDependencies:
   sass-embedded: ^1.85.1
 
   # For testing
-  "@nuxt/test-utils": ^3.17.1
+  "@nuxt/test-utils": ^3.17.2
   "@playwright/test": ^1.51.0
   "@vue/test-utils": ^2.4.6
   jsdom: ^26.0.0
   std-env: ^3.8.1
   vitest: ^3.0.8
-  "monocart-reporter": ^2.9.15
+  "monocart-reporter": ^2.9.16
 
   # For code quality checks on pre-commit
   husky: ^9.1.7
-  lint-staged: ^15.4.3
+  lint-staged: ^15.5.0
 
   # To use Pug in Vue templates
   "@vue/language-plugin-pug": ^2.2.8 # Enables autocompletion for Vue components in Pug templates
@@ -83,14 +83,14 @@ devDependencies:
 
   # For linting stylesheets
   "@nuxtjs/stylelint-module": ^5.2.0
-  stylelint: ^16.15.0
+  stylelint: ^16.16.0
   stylelint-config-standard-scss: ^14.0.0
   stylelint-config-standard-vue: ^1.0.0
   # Use SugarSS as a pseudo-sass parser due to postcss-sass not working with media queries
   postcss-sass: npm:sugarss@latest
   postcss-html: ^1.8.0
 
-packageManager: pnpm@10.6.1+sha512.40ee09af407fa9fbb5fbfb8e1cb40fbb74c0af0c3e10e9224d7b53c7658528615b2c92450e74cfad91e3a2dcafe3ce4050d80bda71d757756d2ce2b66213e9a3
+packageManager: pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6
 
 pnpm:
   onlyBuiltDependencies:
