@@ -95,8 +95,3 @@ devDependencies:
   # Use SugarSS as a pseudo-sass parser due to postcss-sass not working with media queries
   postcss-sass: npm:sugarss@latest
   postcss-html: ^1.8.0
-
-pnpm:
-  onlyBuiltDependencies:
-    - "@parcel/watcher"
-    - esbuild
