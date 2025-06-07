@@ -11,5 +11,20 @@ export default {
       ],
       customSyntax: 'postcss-sass'
     }
-  ]
+  ],
+  rules: {
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: [
+          'blockless-after-same-name-blockless'
+        ],
+
+        ignore: [
+          'inside-block'
+        ]
+      }
+    ],
+    'no-empty-source': null
+  }
 }
