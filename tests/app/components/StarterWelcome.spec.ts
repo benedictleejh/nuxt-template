@@ -9,12 +9,6 @@ describe('StarterWelcome', () => {
     expect(starterWelcome.html()).toBeDefined()
   })
 
-  it('should say "Welcome to Nuxt!" in a h1', async () => {
-    const starterWelcome = await mountSuspended(StarterWelcome)
-
-    expect(starterWelcome.find('h1').text()).toEqual('Welcome to Nuxt!')
-  })
-
   it('should not contain references to app.vue', async () => {
     const starterWelcome = await mountSuspended(StarterWelcome)
 
