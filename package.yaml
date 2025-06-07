@@ -5,7 +5,7 @@ type: module
 devEngines:
   packageManager:
     name: pnpm
-    version: 10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977
+    version: 10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912
     onFail: download
 
 engines:
@@ -49,14 +49,14 @@ dependencies:
   ## This is in dependencies due to how Nuxt builds
   "@nuxt/eslint": ^1.4.1
   eslint: ^9.28.0
-  eslint-plugin-n: ^17.18.0
+  eslint-plugin-n: ^17.19.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
   "@eslint/eslintrc": ^3.3.1 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   yaml: ^2.8.0
 
   "@nuxt/fonts": ^0.11.4
 
-  nuxt: ^3.17.4
+  nuxt: ^3.17.5
   vue: latest
 
 devDependencies:
@@ -72,7 +72,7 @@ devDependencies:
   "@vue/test-utils": ^2.4.6
   jsdom: ^26.1.0
   std-env: ^3.9.0
-  vitest: ^3.1.4
+  vitest: ^3.2.2
   "monocart-reporter": ^2.9.20
 
   # For code quality checks on pre-commit
