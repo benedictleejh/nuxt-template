@@ -48,7 +48,10 @@ export default defineNuxtConfig({
   eslint: {
     config: {
       stylistic: {
-        commaDangle: 'never'
+        semi: false,
+        quotes: 'single',
+        commaDangle: 'never',
+        braceStyle: 'stroustrup'
       }
     }
   }
