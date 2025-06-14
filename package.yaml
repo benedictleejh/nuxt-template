@@ -5,11 +5,11 @@ type: module
 devEngines:
   packageManager:
     name: pnpm
-    version: 10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912
+    version: 10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac
     onFail: download
 
 engines:
-  node: ">= 24"
+  node: '>= 24'
 
 scripts:
   build: nuxt build
@@ -47,14 +47,14 @@ scripts:
 dependencies:
   # For linting
   ## This is in dependencies due to how Nuxt builds
-  "@nuxt/eslint": ^1.4.1
-  eslint: ^9.28.0
-  eslint-plugin-n: ^17.19.0
+  '@nuxt/eslint': ^1.4.1
+  eslint: ^9.29.0
+  eslint-plugin-n: ^17.20.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
-  "@eslint/eslintrc": ^3.3.1 # To convert eslint-plugin-vue-pug to new ESLint flat config format
+  '@eslint/eslintrc': ^3.3.1 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   yaml: ^2.8.0
 
-  "@nuxt/fonts": ^0.11.4
+  '@nuxt/fonts': ^0.11.4
 
   nuxt: ^3.17.5
   vue: latest
@@ -64,23 +64,23 @@ devDependencies:
   jiti: ^2.4.2
 
   # To use Sass
-  sass-embedded: ^1.89.1
+  sass-embedded: ^1.89.2
 
   # For testing
-  "@nuxt/test-utils": ^3.19.1
-  "@playwright/test": ^1.52.0
-  "@vue/test-utils": ^2.4.6
+  '@nuxt/test-utils': ^3.19.1
+  '@playwright/test': ^1.53.0
+  '@vue/test-utils': ^2.4.6
   jsdom: ^26.1.0
   std-env: ^3.9.0
-  vitest: ^3.2.2
-  "monocart-reporter": ^2.9.20
+  vitest: ^3.2.3
+  'monocart-reporter': ^2.9.20
 
   # For code quality checks on pre-commit
   husky: ^9.1.7
   lint-staged: ^16.1.0
 
   # To use Pug in Vue templates
-  "@vue/language-plugin-pug": ^2.2.10 # Enables autocompletion for Vue components in Pug templates
+  '@vue/language-plugin-pug': ^2.2.10 # Enables autocompletion for Vue components in Pug templates
   pug: ^3.0.3
 
   # To enable typechecking
@@ -88,7 +88,7 @@ devDependencies:
   vue-tsc: ^2.2.10
 
   # For linting stylesheets
-  "@nuxtjs/stylelint-module": ^5.2.1
+  '@nuxtjs/stylelint-module': ^5.2.1
   stylelint: ^16.20.0
   stylelint-config-standard-scss: ^15.0.1
   stylelint-config-standard-vue: ^1.0.0
