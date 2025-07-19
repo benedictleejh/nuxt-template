@@ -19,21 +19,7 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  future: {
-    compatibilityVersion: 4
-  },
-
   compatibilityDate: '2024-04-03',
-
-  vite: {
-    css: {
-      preprocessorOptions: {
-        sass: {
-          api: 'modern-compiler'
-        }
-      }
-    }
-  },
 
   typescript: {
     tsConfig: {
