@@ -49,7 +49,7 @@ dependencies:
   ## This is in dependencies due to how Nuxt builds
   '@nuxt/eslint': ^1.6.0
   eslint: ^9.31.0
-  eslint-plugin-n: ^17.21.0
+  eslint-plugin-unicorn: ^60.0.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
   '@eslint/eslintrc': ^3.3.1 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   yaml: ^2.8.0
