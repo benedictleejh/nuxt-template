@@ -47,8 +47,8 @@ scripts:
 dependencies:
   # For linting
   ## This is in dependencies due to how Nuxt builds
-  '@nuxt/eslint': ^1.6.0
-  eslint: ^9.31.0
+  '@nuxt/eslint': ^1.7.1
+  eslint: ^9.32.0
   eslint-plugin-unicorn: ^60.0.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
   '@eslint/eslintrc': ^3.3.1 # To convert eslint-plugin-vue-pug to new ESLint flat config format
@@ -56,12 +56,12 @@ dependencies:
 
   '@nuxt/fonts': ^0.11.4
 
-  nuxt: ^4.0.0
+  nuxt: ^4.0.1
   vue: latest
 
 devDependencies:
   # Enable use of TypeScript config files in various tools
-  jiti: ^2.4.2
+  jiti: ^2.5.1
 
   # To use Sass
   sass-embedded: ^1.89.2
@@ -80,12 +80,13 @@ devDependencies:
   lint-staged: ^16.1.2
 
   # To use Pug in Vue templates
-  '@vue/language-plugin-pug': ^3.0.3 # Enables autocompletion for Vue components in Pug templates
+  '@vue/language-plugin-pug': ^3.0.4 # Enables autocompletion for Vue components in Pug templates
   pug: ^3.0.3
 
   # To enable typechecking
   typescript: ^5.8.3
-  vue-tsc: ^3.0.3
+  vue-tsc: ^3.0.4
+  '@types/node': '^24.1.0' # Allow typechecking of node code as well
 
   # For linting stylesheets
   '@nuxtjs/stylelint-module': ^5.2.1
