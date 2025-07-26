@@ -28,6 +28,14 @@ export default defineNuxtConfig({
           '@vue/language-plugin-pug'
         ]
       }
+    },
+
+    nodeTsConfig: {
+      include: [
+        // Add all TS/JS files at root to Node tsconfig
+        '../*.ts',
+        '../*.js'
+      ]
     }
   },
 
