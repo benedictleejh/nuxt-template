@@ -16,7 +16,9 @@ export default defineNuxtConfig({
   ],
 
   devtools: {
-    enabled: true
+    timeline: {
+      enabled: true
+    }
   },
 
   compatibilityDate: '2024-04-03',
@@ -31,10 +33,18 @@ export default defineNuxtConfig({
     },
 
     nodeTsConfig: {
+      compilerOptions: {
+        checkJs: true
+      },
+
       include: [
         // Add all TS/JS files at root to Node tsconfig
         '../*.ts',
-        '../*.js'
+        '../*.js',
+
+        // Enable typechecking for scripts
+        '../scripts/*.ts',
+        '../scripts/*.js'
       ]
     }
   },
