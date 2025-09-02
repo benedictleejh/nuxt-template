@@ -39,12 +39,10 @@ export default defineNuxtConfig({
 
       include: [
         // Add all TS/JS files at root to Node tsconfig
-        '../*.ts',
-        '../*.js',
+        '../*',
 
         // Enable typechecking for scripts
-        '../scripts/*.ts',
-        '../scripts/*.js'
+        '../scripts/*'
       ]
     }
   },
