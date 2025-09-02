@@ -1,5 +1,6 @@
-/** @type {import('stylelint').Config} */
-export default {
+import { defineConfig as defineStylelintConfig } from 'stylelint-define-config'
+
+export default defineStylelintConfig({
   extends: [
     'stylelint-config-standard-scss',
     'stylelint-config-standard-vue/scss'
@@ -27,4 +28,4 @@ export default {
     ],
     'no-empty-source': null
   }
-}
+})

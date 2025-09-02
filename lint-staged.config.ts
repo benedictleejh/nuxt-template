@@ -5,7 +5,7 @@ export default {
     `pnpm lint:es ${stagedFiles.join(' ')}`
   ],
   '*.{css,less,scss,sass,styl,stylus,pcss,postcss,sss,vue}': stagedFiles => [
-    `stylelint ${stagedFiles.join(' ')}`
+    `stylelint --config stylelint.config.ts ${stagedFiles.join(' ')}`
   ],
   '*.{*,1}': () => [
     'pnpm typecheck'
