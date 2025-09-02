@@ -5,7 +5,7 @@ type: module
 devEngines:
   packageManager:
     name: pnpm
-    version: 10.15.0+sha512.486ebc259d3e999a4e8691ce03b5cac4a71cbeca39372a9b762cb500cfdf0873e2cb16abe3d951b1ee2cf012503f027b98b6584e4df22524e0c7450d9ec7aa7b
+    version: 10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67
     onFail: download
 
 engines:
@@ -57,7 +57,7 @@ dependencies:
   '@nuxt/fonts': ^0.11.4
 
   nuxt: ^4.0.3
-  vue: ^3.5.19
+  vue: ^3.5.21
   vue-router: ^4.5.1
 
 devDependencies:
@@ -65,7 +65,7 @@ devDependencies:
   jiti: ^2.5.1
 
   # To use Sass
-  sass-embedded: ^1.90.0
+  sass-embedded: ^1.91.0
 
   # For testing
   '@nuxt/test-utils': ^3.19.2
@@ -78,7 +78,7 @@ devDependencies:
 
   # For code quality checks on pre-commit
   husky: ^9.1.7
-  lint-staged: ^16.1.5
+  lint-staged: ^16.1.6
 
   # To use Pug in Vue templates
   '@vue/language-plugin-pug': ^3.0.6 # Enables autocompletion for Vue components in Pug templates
@@ -92,6 +92,7 @@ devDependencies:
   # For linting stylesheets
   '@nuxtjs/stylelint-module': ^5.2.1
   stylelint: ^16.23.1
+  # stylelint-define-config: ^16.22.0
   stylelint-config-standard-scss: ^15.0.1
   stylelint-config-standard-vue: ^1.0.0
   # Use SugarSS as a pseudo-sass parser due to postcss-sass not working with media queries
