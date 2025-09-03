@@ -23,13 +23,47 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-04-03',
 
+  nitro: {
+    typescript: {
+      tsConfig: {
+        compilerOptions: {
+          // Workaround for https://github.com/nuxt/nuxt/issues/32941
+          noUncheckedIndexedAccess: true
+        },
+
+        include: [
+          // Add server tests, fixtures, and mocks to server tsconfig
+          '../tests/server/**/*',
+          '../tests/fixtures/server/**/*',
+          '../tests/mocks/server/**/*'
+        ]
+      }
+    }
+  },
+
   typescript: {
     tsConfig: {
       vueCompilerOptions: {
         plugins: [
           '@vue/language-plugin-pug'
         ]
-      }
+      },
+
+      include: [
+        // Add app tests, fixtures, and mocks to app tsconfig
+        '../tests/app/**/*',
+        '../tests/fixtures/app/**/*',
+        '../tests/mocks/app/**/*'
+      ]
+    },
+
+    sharedTsConfig: {
+      include: [
+        // Add shared tests, fixtures, and mocks to shared tsconfig
+        '../tests/shared/**/*',
+        '../tests/fixtures/shared/**/*',
+        '../tests/mocks/shared/**/*'
+      ]
     },
 
     nodeTsConfig: {
@@ -42,7 +76,10 @@ export default defineNuxtConfig({
         '../*',
 
         // Enable typechecking for scripts
-        '../scripts/*'
+        '../scripts/*',
+
+        // Add e2e tests to node tsconfig
+        '../tests/e2e/**/*'
       ]
     }
   },
