@@ -1,8 +1,7 @@
-import { fileURLToPath } from 'node:url'
-import { defineConfig, devices } from '@playwright/test'
 import type { ConfigOptions } from '@nuxt/test-utils/playwright'
-import { isCI, isWindows } from 'std-env'
+import { defineConfig, devices } from '@playwright/test'
 import type { MonocartReporterOptions } from 'monocart-reporter'
+import { isCI, isWindows } from 'std-env'
 
 const devicesToTest = [
   'Desktop Chrome'
@@ -18,7 +17,7 @@ const devicesToTest = [
   // Test against branded browsers.
   // { ...devices['Desktop Edge'], channel: 'msedge' },
   // { ...devices['Desktop Chrome'], channel: 'chrome' },
-] satisfies Array<string | typeof devices[string]>
+] satisfies (string | typeof devices[string])[]
 
 /* See https://playwright.dev/docs/test-configuration. */
 export default defineConfig<ConfigOptions>({
@@ -28,7 +27,7 @@ export default defineConfig<ConfigOptions>({
   fullyParallel: true,
 
   /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!isCI,
+  forbidOnly: isCI,
 
   /* Retry on CI only */
   retries: isCI ? 2 : 0,
@@ -36,7 +35,7 @@ export default defineConfig<ConfigOptions>({
   /* Opt out of parallel tests on CI. */
   workers: isCI ? 1 : undefined,
 
-  timeout: isWindows ? 60000 : undefined,
+  timeout: isWindows ? 60_000 : undefined,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
@@ -58,7 +57,7 @@ export default defineConfig<ConfigOptions>({
 
     /* Nuxt configuration options */
     nuxt: {
-      rootDir: fileURLToPath(new URL('.', import.meta.url))
+      rootDir: import.meta.dirname
     }
   },
 

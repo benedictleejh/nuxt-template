@@ -28,7 +28,8 @@ export default defineNuxtConfig({
       tsConfig: {
         compilerOptions: {
           // Workaround for https://github.com/nuxt/nuxt/issues/32941
-          noUncheckedIndexedAccess: true
+          noUncheckedIndexedAccess: true,
+          noImplicitReturns: true
         },
 
         include: [
@@ -43,6 +44,10 @@ export default defineNuxtConfig({
 
   typescript: {
     tsConfig: {
+      compilerOptions: {
+        noImplicitReturns: true
+      },
+
       vueCompilerOptions: {
         plugins: [
           '@vue/language-plugin-pug'
@@ -58,6 +63,10 @@ export default defineNuxtConfig({
     },
 
     sharedTsConfig: {
+      compilerOptions: {
+        noImplicitReturns: true
+      },
+
       include: [
         // Add shared tests, fixtures, and mocks to shared tsconfig
         '../tests/shared/**/*',
@@ -68,12 +77,16 @@ export default defineNuxtConfig({
 
     nodeTsConfig: {
       compilerOptions: {
-        checkJs: true
+        checkJs: true,
+        noImplicitReturns: true
       },
 
       include: [
         // Add all TS/JS files at root to Node tsconfig
         '../*',
+
+        // Add files in .config
+        '../.config/**/*',
 
         // Enable typechecking for scripts
         '../scripts/*',
@@ -91,7 +104,15 @@ export default defineNuxtConfig({
         quotes: 'single',
         commaDangle: 'never',
         braceStyle: 'stroustrup'
+      },
+
+      typescript: {
+        tsconfigPath: './tsconfig.json'
       }
     }
+  },
+
+  stylelint: {
+    configFile: './stylelint.config.ts'
   }
 })

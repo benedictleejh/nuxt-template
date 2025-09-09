@@ -1,21 +1,27 @@
-import { FlatCompat } from '@eslint/eslintrc'
-import eslintPluginUnicorn from 'eslint-plugin-unicorn'
-
+import {
+  playwright,
+  vuePug,
+  vitest,
+  typescript,
+  unicorn,
+  stylistic,
+  javascript,
+  imports,
+  nuxt,
+  vue
+} from './.config/eslint'
 import withNuxt from './.nuxt/eslint.config.mjs'
-
-const compat = new FlatCompat({ baseDirectory: import.meta.dirname })
 
 export default withNuxt(
   // Your custom configs here
-  ...compat.extends('plugin:vue-pug/vue3-recommended'),
-  {
-    plugins: {
-      unicorn: eslintPluginUnicorn
-    },
-    rules: {
-      'unicorn/prefer-node-protocol': [
-        'error'
-      ]
-    }
-  }
+  javascript,
+  typescript,
+  vue,
+  vuePug,
+  unicorn,
+  imports,
+  stylistic,
+  nuxt,
+  playwright,
+  vitest
 )

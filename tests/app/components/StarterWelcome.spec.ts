@@ -1,8 +1,9 @@
 import { mountSuspended } from '@nuxt/test-utils/runtime'
 import { describe, expect, it } from 'vitest'
+
 import StarterWelcome from '~/components/StarterWelcome.vue'
 
-describe('StarterWelcome', () => {
+describe(StarterWelcome, () => {
   it('should be mountable', async () => {
     const starterWelcome = await mountSuspended(StarterWelcome)
 
