@@ -30,7 +30,7 @@ scripts:
 
   lint: pnpm lint:es && pnpm lint:style
   lint:es: eslint --max-warnings 0
-  lint:style: stylelint --config stylelint.config.ts "**/*.{css,less,scss,sass,styl,stylus,pcss,postcss,sss,vue}"
+  lint:style: stylelint "**/*.{css,less,scss,sass,styl,stylus,pcss,postcss,sss,vue}"
   lint:fix: pnpm lint:es:fix && pnpm lint:style:fix
   lint:es:fix: pnpm lint:es --fix
   lint:style:fix: pnpm lint:style --fix
@@ -94,8 +94,11 @@ devDependencies:
   '@nuxtjs/stylelint-module': ^5.2.1
   stylelint: ^16.23.1
   stylelint-define-config: ^16.22.0
+  '@stylelint-types/stylelint-scss': ^6.11.0
+  '@stylelint-types/stylelint-stylistic': ^3.1.3
   stylelint-config-standard-scss: ^15.0.1
   stylelint-config-standard-vue: ^1.0.0
+  '@stylistic/stylelint-config': ^3.0.1
   # Use SugarSS as a pseudo-sass parser due to postcss-sass not working with media queries
   postcss-sass: npm:sugarss@latest
   postcss-html: ^1.8.0

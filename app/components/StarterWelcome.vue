@@ -272,19 +272,29 @@ useHead({
   --un-ring-width: 0px
   --un-ring-color: rgb(147 197 253 / 50%)
 
-  border-color: var(--un-default-border-color, #e5e7eb)
-  border-style: solid
-  border-width: 0
   box-sizing: border-box
+  border:
+    color: var(--un-default-border-color, #e5e7eb)
+    style: solid
+    width: 0
 
 html
   line-height: 1.5
   text-size-adjust: 100%
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
-  font-feature-settings: normal
-  font-variation-settings: normal
   tab-size: 4
   -webkit-tap-highlight-color: transparent
+  font:
+    family: (
+      ui-sans-serif,
+      system-ui,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Noto Color Emoji"
+    )
+    feature-settings: normal
+    variation-settings: normal
 
 body
   line-height: inherit
@@ -292,8 +302,9 @@ body
 
 h1,
 h2
-  font-size: inherit
-  font-weight: inherit
+  font:
+    size: inherit
+    weight: inherit
 
 a
   color: inherit
@@ -322,7 +333,7 @@ svg
   overflow: hidden
   padding: 0
   width: 1px
-  clip: rect(0, 0, 0, 0)
+  clip-path: rect(0 0 0 0)
   border-width: 0
   white-space: nowrap
   position: absolute
@@ -346,8 +357,9 @@ svg
   grid-template-columns: repeat(1, minmax(0, 1fr))
 
 @mixin mx-auto
-  margin-left: auto
-  margin-right: auto
+  margin:
+    left: auto
+    right: auto
 
 @mixin mb-6
   margin-bottom: 1.5rem
@@ -482,16 +494,19 @@ svg
   padding: 1.5rem
 
 @mixin px-2
-  padding-left: .5rem
-  padding-right: 0.5rem
+  padding:
+    left: 0.5rem
+    right: 0.5rem
 
 @mixin px-4
-  padding-left: 1rem
-  padding-right: 1rem
+  padding:
+    left: 1rem
+    right: 1rem
 
 @mixin py-1
-  padding-bottom: .25rem
-  padding-top: 0.25rem
+  padding:
+    bottom: 0.25rem
+    top: 0.25rem
 
 @mixin text-12px
   font-size: 12px
@@ -501,7 +516,7 @@ svg
   line-height: 1.5rem
 
 @mixin text-sm
-  font-size: .875rem
+  font-size: 0.875rem
   line-height: 1.25rem
 
 @mixin group-hover-text-00dc82
@@ -510,11 +525,11 @@ svg
 
 @mixin group-hover-bg-00dc42-opacity-15
   .group:hover &
-    background-color: color-mix(in oklab, #00DC42 15%, transparent)
+    background-color: color-mix(in oklab, #00dc42 15%, transparent)
 
 @mixin group-hover-border-00dc42
   .group:hover &
-    border-color: #00DC42
+    border-color: #00dc42
 
 @mixin text-00dc82
   color: rgb(0 220 130)
@@ -563,9 +578,10 @@ svg
     box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow), var(--un-shadow)
 
 @mixin transition-all
-  transition-duration: .15s
-  transition-property: all
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  transition:
+    duration: 0.15s
+    property: all
+    timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 
 @mixin dark-border-00dc82-opacity-50
   @media (prefers-color-scheme: dark)
@@ -633,7 +649,7 @@ svg
 
 @mixin sm-col-span-2
   @media (width >= 640px)
-    grid-column: span (2 / span) 2
+    grid-column: span 2 / span 2
 
 @mixin sm-grid-cols-3
   @media (width >= 640px)
@@ -665,18 +681,21 @@ svg
 
 @mixin sm-px-2-5
   @media (width >= 640px)
-    padding-left: .625rem
-    padding-right: 0.625rem
+    padding:
+      left: 0.625rem
+      right: 0.625rem
 
 @mixin sm-px-6
   @media (width >= 640px)
-    padding-left: 1.5rem
-    padding-right: 1.5rem
+    padding:
+      left: 1.5rem
+      right: 1.5rem
 
 @mixin sm-py-1-5
   @media (width >= 640px)
-    padding-bottom: .375rem
-    padding-top: 0.375rem
+    padding:
+      bottom: 0.375rem
+      top: 0.375rem
 
 @mixin sm-text-14px
   @media (width >= 640px)
@@ -689,8 +708,9 @@ svg
 
 @mixin lg-px-8
   @media (width >= 1024px)
-    padding-left: 2rem
-    padding-right: 2rem
+    padding:
+      left: 2rem
+      right: 2rem
 
 .welcome
   &-main
