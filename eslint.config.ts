@@ -8,7 +8,8 @@ import {
   javascript,
   imports,
   nuxt,
-  vue
+  vue,
+  testingLibrary
 } from './.config/eslint'
 import withNuxt from './.nuxt/eslint.config.mjs'
 
@@ -23,5 +24,6 @@ export default withNuxt(
   stylistic,
   nuxt,
   playwright,
-  vitest
+  vitest,
+  testingLibrary
 )

@@ -1,9 +1,11 @@
-import { mountSuspended } from '@nuxt/test-utils/runtime'
+import { mountSuspended, renderSuspended } from '@nuxt/test-utils/runtime'
+import { screen } from '@testing-library/vue'
 import { describe, expect, it } from 'vitest'
 
 import StarterWelcome from '~/components/StarterWelcome.vue'
+import { getComponentName } from '~~/tests/utils/app/get-component-name'
 
-describe(StarterWelcome, () => {
+describe(getComponentName(StarterWelcome), () => {
   it('should be mountable', async () => {
     const starterWelcome = await mountSuspended(StarterWelcome)
 
@@ -11,20 +13,20 @@ describe(StarterWelcome, () => {
   })
 
   it('should not contain references to app.vue', async () => {
-    const starterWelcome = await mountSuspended(StarterWelcome)
+    await renderSuspended(StarterWelcome)
 
-    expect(starterWelcome.html()).not.toContain('app.vue')
+    expect(screen.queryByText('app.vue', { exact: false })).toBeNull()
   })
 
   it('should reference index.vue', async () => {
-    const starterWelcome = await mountSuspended(StarterWelcome)
+    await renderSuspended(StarterWelcome)
 
-    expect(starterWelcome.html()).toContain('index.vue')
+    expect(screen.getByText('index.vue', { exact: false })).toBeDefined()
   })
 
   it('should reference app/components/StarterWelcome.vue', async () => {
-    const starterWelcome = await mountSuspended(StarterWelcome)
+    await renderSuspended(StarterWelcome)
 
-    expect(starterWelcome.html()).toContain('app/components/StarterWelcome.vue')
+    expect(screen.getByText('app/components/StarterWelcome.vue')).toBeDefined()
   })
 })

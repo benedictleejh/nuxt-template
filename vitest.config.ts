@@ -1,17 +1,73 @@
-import { defineVitestConfig } from '@nuxt/test-utils/config'
-import { defaultExclude } from 'vitest/config'
+import path from 'node:path'
+
+import { defineVitestProject } from '@nuxt/test-utils/config'
+import { defineConfig as defineVitestConfig } from 'vitest/config'
 
 export default defineVitestConfig({
   test: {
-    environment: 'nuxt',
-    environmentOptions: {
-      nuxt: {
-        domEnvironment: 'jsdom'
-      }
-    },
-    exclude: [
-      ...defaultExclude,
-      './tests/e2e' // Exclude e2e tests, as we test those with Playwright
+    projects: [
+      {
+        // TODO: remove when Nuxt Test Utils provides a way to automatically add this to the project
+        resolve: {
+          alias: {
+            '~': path.resolve(import.meta.dirname, 'app'),
+            '~~': import.meta.dirname,
+            '#shared': path.resolve(import.meta.dirname, 'shared')
+          }
+        },
+        test: {
+          name: 'shared',
+          include: [
+            'tests/shared/utils/*.{test,spec}.ts'
+          ],
+          environment: 'node'
+        }
+      },
+      {
+        // TODO: remove when Nuxt Test Utils provides a way to automatically add this to the project
+        resolve: {
+          alias: {
+            '~': path.resolve(import.meta.dirname, 'app'),
+            '~~': import.meta.dirname,
+            '#shared': path.resolve(import.meta.dirname, 'shared')
+          }
+        },
+        test: {
+          name: 'app:utils',
+          include: [
+            'tests/app/utils/*.{test,spec}.ts'
+          ],
+          environment: 'node'
+        }
+      },
+      await defineVitestProject({
+        test: {
+          name: 'app:nuxt',
+          include: [
+            'tests/app/{components,composables,layouts,middleware,pages,plugins}/*.{test,spec}.ts'
+          ],
+          environment: 'nuxt',
+          environmentOptions: {
+            nuxt: {
+              domEnvironment: 'jsdom'
+            }
+          }
+        }
+      }),
+      await defineVitestProject({
+        test: {
+          name: 'server',
+          include: [
+            'tests/server/{api,middleware,plugins,routes,utils}/*.{test,spec}.ts'
+          ],
+          environment: 'nuxt',
+          environmentOptions: {
+            nuxt: {
+              domEnvironment: 'jsdom'
+            }
+          }
+        }
+      })
     ]
   }
 })

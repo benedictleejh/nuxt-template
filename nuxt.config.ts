@@ -33,10 +33,11 @@ export default defineNuxtConfig({
         },
 
         include: [
-          // Add server tests, fixtures, and mocks to server tsconfig
+          // Add server tests, fixtures, mocks, and test utils to server tsconfig
           '../tests/server/**/*',
           '../tests/fixtures/server/**/*',
-          '../tests/mocks/server/**/*'
+          '../tests/mocks/server/**/*',
+          '../tests/utils/server/**/*'
         ]
       }
     }
@@ -55,10 +56,11 @@ export default defineNuxtConfig({
       },
 
       include: [
-        // Add app tests, fixtures, and mocks to app tsconfig
+        // Add app tests, fixtures, mocks, and test utils to app tsconfig
         '../tests/app/**/*',
         '../tests/fixtures/app/**/*',
-        '../tests/mocks/app/**/*'
+        '../tests/mocks/app/**/*',
+        '../tests/utils/app/**/*'
       ]
     },
 
@@ -68,10 +70,11 @@ export default defineNuxtConfig({
       },
 
       include: [
-        // Add shared tests, fixtures, and mocks to shared tsconfig
+        // Add shared tests, fixtures, mocks, and test utils to shared tsconfig
         '../tests/shared/**/*',
         '../tests/fixtures/shared/**/*',
-        '../tests/mocks/shared/**/*'
+        '../tests/mocks/shared/**/*',
+        '../tests/utils/shared/**/*'
       ]
     },
 
