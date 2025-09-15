@@ -7,7 +7,7 @@ export const javascript = defineFlatConfigs(
       'array-callback-return': 'error',
       'no-await-in-loop': 'error',
       'no-constructor-return': 'error',
-      'no-duplicate-imports': 'error',
+      'no-duplicate-imports': 'off', // Handled by import-x instead
       'no-promise-executor-return': 'error',
       'no-self-compare': 'error',
       'no-template-curly-in-string': 'error',
