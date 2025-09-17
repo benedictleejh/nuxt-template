@@ -1,18 +1,26 @@
 {
   "recommendations": [
-    "vunguyentuan.vscode-css-variables",
-    "formulahendry.auto-close-tag",
-    "editorconfig.editorconfig",
-    "irongeek.vscode-env",
+    // Linting Extensions
     "dbaeumer.vscode-eslint",
-    "antfu.goto-alias",
-    "nuxtr.nuxtr-vscode",
-    "vunguyentuan.vscode-postcss",
-    "samatech.postcss-vue",
-    "syler.sass-indented",
     "stylelint.vscode-stylelint",
-    "vue.volar",
-    "praburangki.nuxt-snippets",
-    "ms-playwright.playwright"
+    "editorconfig.editorconfig",
+
+    // Nuxt Extensions
+    "nuxtr.nuxt-vscode-extentions",
+
+    // Auto close tags in Vue
+    "formulahendry.auto-close-tag",
+
+    // Sass Extensions
+    "somewhatstationery.some-sass",
+    "syler.sass-indented",
+
+    // CSS Extensions
+    "pucelle.vscode-css-navigation",
+    "vunguyentuan.vscode-css-variables",
+
+    // Testing Extension
+    "vitest.explorer",
+    "ms-playwright.playwright",
   ]
 }
