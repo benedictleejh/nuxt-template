@@ -51,18 +51,5 @@
   // Autocompletion for package.yaml
   "yaml.schemas": {
     "https://json.schemastore.org/package.json": "package.yaml"
-  },
-
-  // Add icon for package.yaml
-  "vsicons.associations.files": [
-    {
-      "icon": "pnpm",
-      "extensions": [
-        "package.yaml"
-      ],
-      "light": true,
-      "filename": true,
-      "format": "svg"
-    }
-  ]
+  }
 }
