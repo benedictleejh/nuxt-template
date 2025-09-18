@@ -4,7 +4,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/stylelint-module',
     '@nuxt/fonts',
-    '@nuxt/test-utils/module'
+    '@nuxt/test-utils/module',
+    '@nuxt/image'
   ],
 
   components: [
@@ -113,6 +114,10 @@ export default defineNuxtConfig({
         tsconfigPath: './tsconfig.json'
       }
     }
+  },
+
+  image: {
+    dir: 'assets/images'
   },
 
   stylelint: {
