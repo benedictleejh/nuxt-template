@@ -1,9 +1,3 @@
-packageExtensions:
-  stylelint:
-    dependencies:
-      # Enable TypeScript config loading for Stylelint
-      cosmiconfig-typescript-loader: ^6.1.0
-
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - esbuild

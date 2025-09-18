@@ -118,9 +118,5 @@ export default defineNuxtConfig({
 
   image: {
     dir: 'assets/images'
-  },
-
-  stylelint: {
-    configFile: './stylelint.config.ts'
   }
 })
