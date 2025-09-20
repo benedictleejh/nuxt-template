@@ -25,9 +25,12 @@ export const vitest = defineFlatConfigs(
       ],
       'vitest/prefer-expect-assertions': 'off',
 
-      // Due to a bug in the plugin where actual functions are not recognised as functions
-      // See https://github.com/vitest-dev/eslint-plugin-vitest/issues/692
-      'vitest/valid-title': 'off',
+      'vitest/valid-title': [
+        'error',
+        {
+          allowArguments: true
+        }
+      ],
 
       // To allow common setup
       'vitest/no-hooks': 'off',
@@ -37,6 +40,11 @@ export const vitest = defineFlatConfigs(
 
       // Allow magic numbers for behaviour testing
       'no-magic-numbers': 'off'
+    },
+    settings: {
+      vitest: {
+        typecheck: true
+      }
     }
   }
 )

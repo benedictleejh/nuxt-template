@@ -42,7 +42,7 @@ export default defineVitestConfig({
       },
       await defineVitestProject({
         test: {
-          name: 'app:nuxt',
+          name: 'app',
           include: [
             'tests/app/{components,composables,layouts,middleware,pages,plugins}/*.{test,spec}.ts'
           ],
@@ -56,6 +56,7 @@ export default defineVitestConfig({
       }),
       await defineVitestProject({
         test: {
+          setupFiles: './.config/vitest.setup.ts',
           name: 'server',
           include: [
             'tests/server/{api,middleware,plugins,routes,utils}/*.{test,spec}.ts'

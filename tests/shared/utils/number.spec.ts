@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { add } from '~/utils/add'
+import { add } from '~~/shared/utils/number'
 
 describe('#add', () => {
   describe('should add 2 numbers', () => {
