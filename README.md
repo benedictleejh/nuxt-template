@@ -18,6 +18,7 @@ An opinionated non-minimal Nuxt starter template
 - [vue-dompurify-html](https://www.npmjs.com/package/vue-dompurify-html) to avoid use of v-html
 - [Nuxt Fonts](https://fonts.nuxt.com) for easy fonts usage
 - [Nuxt Image](https://image.nuxt.com) for image optimisation
+  - With image folder set to `assets/images`
 - [lint-staged](https://www.npmjs.com/package/lint-staged) to run ESLint, Stylelint, typechecking, and unit tests on
   commit
 - [Husky](https://typicode.github.io/husky/) for git hook management
