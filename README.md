@@ -7,14 +7,17 @@ An opinionated non-minimal Nuxt starter template
 ### Initial Setup
 
 - [Pug](https://pugjs.org/) templates
-- Full Typescript
+- Full TypeScript
   - Including configs
 - [Sass](https://sass-lang.com/documentation/syntax/#the-indented-syntax) for styling
-  - With a default structure for Sass files
+  - With a default structure for Sass files based on https://dev.to/technoph1le/i-built-a-sass-template-you-can-just-copy-me-213o
 - Complete Nuxt folder structure with stubbed empty folders
 - Full setup folder structure for splitting tests, etc. into the appropriate TypeScript context
 - Disabled auto path prefixing for components
   - For easier component organisation
+- [pnpm](https://pnpm.io) for package management
+  - With `minimumReleaseAge` set to 1 week for security
+    - Excludes some packages that utilise trusted publishing
 - [vue-dompurify-html](https://www.npmjs.com/package/vue-dompurify-html) to avoid use of v-html
 - [Nuxt Fonts](https://fonts.nuxt.com) for easy fonts usage
 - [Nuxt Image](https://image.nuxt.com) for image optimisation
