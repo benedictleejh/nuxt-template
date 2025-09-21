@@ -1,8 +1,10 @@
 minimumReleaseAge: 10080
 
 minimumReleaseAgeExclude:
+  # Trust packages that publish using trusted publishing
   - nuxt
   - "@nuxt/*"
+  - eslint-plugin-testing-library
 
 onlyBuiltDependencies:
   - '@parcel/watcher'
