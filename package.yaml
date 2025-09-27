@@ -21,7 +21,7 @@ scripts:
 
   prepare: husky
 
-  clean: pnpx jiti scripts/clean.ts
+  clean: node scripts/clean.ts
 
   test:unit:watch: vitest
   test:unit: vitest --run
@@ -36,7 +36,7 @@ scripts:
   lint:style:fix: pnpm lint:style --fix
 
   # Task to create package.json for tools that need it
-  compile:packageJson: pnpx jiti scripts/compile-package-json.ts
+  compile:packageJson: node scripts/compile-package-json.ts
 
   # Workaround for:
   # - ESLint requiring a package.json
