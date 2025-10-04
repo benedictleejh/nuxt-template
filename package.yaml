@@ -5,7 +5,7 @@ type: module
 devEngines:
   packageManager:
     name: pnpm
-    version: 10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a
+    version: 10.18.0+sha512.e804f889f1cecc40d572db084eec3e4881739f8dec69c0ff10d2d1beff9a4e309383ba27b5b750059d7f4c149535b6cd0d2cb1ed3aeb739239a4284a68f40cfa
     onFail: download
 
 engines:
@@ -52,7 +52,7 @@ dependencies:
   isomorphic-dompurify: ^2.28.0
 
   nuxt: ^4.1.2
-  vue: ^3.5.21
+  vue: ^3.5.22
   vue-router: ^4.5.1
 
 devDependencies:
@@ -61,35 +61,35 @@ devDependencies:
   eslint: ^9.36.0
   eslint-plugin-unicorn: ^61.0.2
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
-  '@vitest/eslint-plugin': ^1.3.12 # ESLint rules for Vitest
+  '@vitest/eslint-plugin': ^1.3.13 # ESLint rules for Vitest
   eslint-plugin-playwright: ^2.2.2 # ESLint rules for Playwright
-  eslint-plugin-testing-library: ^7.10.0 # ESLint rules for Testing Library
+  eslint-plugin-testing-library: ^7.11.0 # ESLint rules for Testing Library
   '@eslint/eslintrc': ^3.3.1 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   yaml: ^2.8.1
 
   # Enable use of TypeScript config files in various tools
-  jiti: ^2.5.1
+  jiti: ^2.6.0
 
   # To use Sass
-  sass-embedded: ^1.93.0
+  sass-embedded: ^1.93.2
 
   # For testing
   '@nuxt/test-utils': ^3.19.2
-  '@playwright/test': ^1.55.0
+  '@playwright/test': ^1.55.1
   '@vue/test-utils': ^2.4.6
   '@testing-library/vue': ^8.1.0
   jsdom: ^27.0.0
   std-env: ^3.9.0
   vitest: ^3.2.4
-  'monocart-reporter': ^2.9.22
+  'monocart-reporter': ^2.9.23
 
   # For code quality checks on pre-commit
   husky: ^9.1.7
-  lint-staged: ^16.1.6
+  lint-staged: ^16.2.1
 
   # To enable typechecking
   typescript: ^5.9.2
-  vue-tsc: &vue-tools ^3.0.7
+  vue-tsc: &vue-tools ^3.0.8
   '@types/node': ^24.5.2 # Allow typechecking of node code as well
 
   # To use Pug in Vue templates
