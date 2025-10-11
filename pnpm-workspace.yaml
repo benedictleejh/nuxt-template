@@ -3,8 +3,15 @@ minimumReleaseAge: 10080
 minimumReleaseAgeExclude:
   # Trust packages that publish using trusted publishing
   - nuxt
-  - "@nuxt/*"
+  - '@nuxt/*'
   - eslint-plugin-testing-library
+  - oxc-parser
+  - '@oxc-parser/*'
+  - oxc-minify
+  - '@oxc-minify/*'
+  - oxc-transform
+  - '@oxc-transform/*'
+  - '@oxc-project/types'
 
 onlyBuiltDependencies:
   - '@parcel/watcher'
