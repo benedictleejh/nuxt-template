@@ -5,7 +5,7 @@ type: module
 devEngines:
   packageManager:
     name: pnpm
-    version: 10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd
+    version: 10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c
     onFail: download
 
 engines:
@@ -45,24 +45,24 @@ scripts:
   pnpm:devPreinstall: pnpm compile:packageJson
 
 dependencies:
-  '@nuxt/fonts': ^0.11.4
-  '@nuxt/image': ^1.11.0
+  '@nuxt/fonts': ^0.12.1
+  '@nuxt/image': ^2.0.0
 
   vue-dompurify-html: ^5.3.0
-  isomorphic-dompurify: ^2.30.1
+  isomorphic-dompurify: ^2.31.0
 
-  nuxt: ^4.2.0
-  vue: ^3.5.22
+  nuxt: ^4.2.1
+  vue: ^3.5.24
   vue-router: ^4.6.3
 
 devDependencies:
   # For linting
-  '@nuxt/eslint': ^1.9.0
-  eslint: ^9.38.0
+  '@nuxt/eslint': ^1.10.0
+  eslint: ^9.39.1
   eslint-plugin-unicorn: ^62.0.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
-  '@vitest/eslint-plugin': ^1.3.24 # ESLint rules for Vitest
-  eslint-plugin-playwright: ^2.2.2 # ESLint rules for Playwright
+  '@vitest/eslint-plugin': ^1.4.1 # ESLint rules for Vitest
+  eslint-plugin-playwright: ^2.3.0 # ESLint rules for Playwright
   eslint-plugin-testing-library: ^7.13.3 # ESLint rules for Testing Library
   '@eslint/eslintrc': ^3.3.1 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   yaml: ^2.8.1
@@ -71,14 +71,14 @@ devDependencies:
   jiti: ^2.6.1
 
   # To use Sass
-  sass-embedded: ^1.93.2
+  sass-embedded: ^1.93.3
 
   # For testing
   '@nuxt/test-utils': ^3.20.1
   '@playwright/test': ^1.56.1
   '@vue/test-utils': ^2.4.6
   '@testing-library/vue': ^8.1.0
-  jsdom: ^27.0.1
+  jsdom: ^27.1.0
   std-env: ^3.10.0
   vitest: ^3.2.4
   'monocart-reporter': ^2.9.23
@@ -89,8 +89,8 @@ devDependencies:
 
   # To enable typechecking
   typescript: ^5.9.3
-  vue-tsc: &vue-tools ^3.1.2
-  '@types/node': ^24.9.1 # Allow typechecking of node code as well
+  vue-tsc: &vue-tools ^3.1.3
+  '@types/node': ^24.10.0 # Allow typechecking of node code as well
 
   # To use Pug in Vue templates
   '@vue/language-plugin-pug': *vue-tools # Enables autocompletion for Vue components in Pug templates

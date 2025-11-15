@@ -130,7 +130,7 @@ export const javascript = defineFlatConfigs(
       'prefer-object-spread': 'error',
       'prefer-regex-literals': 'error',
       'prefer-template': 'error',
-      // 'preserve-caught-error': 'error',
+      'preserve-caught-error': 'error',
       'radix': ['error', 'as-needed'],
       'require-unicode-regexp': 'error',
       'sort-imports': 'off', // Handled by import-x

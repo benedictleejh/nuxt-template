@@ -3,7 +3,6 @@ import eslintPluginVitest from '@vitest/eslint-plugin'
 import { defineFlatConfigs } from '../../.nuxt/eslint.config.mjs'
 
 export const vitest = defineFlatConfigs(
-  // @ts-expect-error See https://github.com/vitest-dev/eslint-plugin-vitest/issues/737
   {
     name: 'nuxt-template/vitest',
     plugins: {
