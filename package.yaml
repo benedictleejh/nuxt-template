@@ -5,7 +5,7 @@ type: module
 devEngines:
   packageManager:
     name: pnpm
-    version: 10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c
+    version: 10.23.0+sha512.21c4e5698002ade97e4efe8b8b4a89a8de3c85a37919f957e7a0f30f38fbc5bbdd05980ffe29179b2fb6e6e691242e098d945d1601772cad0fef5fb6411e2a4b
     onFail: download
 
 engines:
@@ -49,7 +49,7 @@ dependencies:
   '@nuxt/image': ^2.0.0
 
   vue-dompurify-html: ^5.3.0
-  isomorphic-dompurify: ^2.31.0
+  isomorphic-dompurify: ^2.32.0
 
   nuxt: ^4.2.1
   vue: ^3.5.24
@@ -61,9 +61,9 @@ devDependencies:
   eslint: ^9.39.1
   eslint-plugin-unicorn: ^62.0.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
-  '@vitest/eslint-plugin': ^1.4.1 # ESLint rules for Vitest
+  '@vitest/eslint-plugin': ^1.4.2 # ESLint rules for Vitest
   eslint-plugin-playwright: ^2.3.0 # ESLint rules for Playwright
-  eslint-plugin-testing-library: ^7.13.3 # ESLint rules for Testing Library
+  eslint-plugin-testing-library: ^7.13.4 # ESLint rules for Testing Library
   '@eslint/eslintrc': ^3.3.1 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   yaml: ^2.8.1
 
@@ -78,7 +78,7 @@ devDependencies:
   '@playwright/test': ^1.56.1
   '@vue/test-utils': ^2.4.6
   '@testing-library/vue': ^8.1.0
-  jsdom: ^27.1.0
+  jsdom: ^27.2.0
   std-env: ^3.10.0
   vitest: ^3.2.4
   'monocart-reporter': ^2.9.23
@@ -89,8 +89,8 @@ devDependencies:
 
   # To enable typechecking
   typescript: ^5.9.3
-  vue-tsc: &vue-tools ^3.1.3
-  '@types/node': ^24.10.0 # Allow typechecking of node code as well
+  vue-tsc: &vue-tools ^3.1.4
+  '@types/node': ^24.10.1 # Allow typechecking of node code as well
 
   # To use Pug in Vue templates
   '@vue/language-plugin-pug': *vue-tools # Enables autocompletion for Vue components in Pug templates
