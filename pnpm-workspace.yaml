@@ -1,6 +1,8 @@
 minimumReleaseAge: 10080
 
-onlyBuiltDependencies:
+trustPolicy: no-downgrade
+
+ignoredBuiltDependencies:
   - '@parcel/watcher'
   - esbuild
   - sharp
