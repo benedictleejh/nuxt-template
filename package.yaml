@@ -5,7 +5,7 @@ type: module
 devEngines:
   packageManager:
     name: pnpm
-    version: 10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501
+    version: 10.26.1+sha512.664074abc367d2c9324fdc18037097ce0a8f126034160f709928e9e9f95d98714347044e5c3164d65bd5da6c59c6be362b107546292a8eecb7999196e5ce58fa
     onFail: download
 
 engines:
@@ -49,21 +49,21 @@ dependencies:
   '@nuxt/image': ^2.0.0
 
   vue-dompurify-html: ^5.3.0
-  isomorphic-dompurify: ^2.33.0
+  isomorphic-dompurify: ^2.34.0
 
-  nuxt: ^4.2.1
+  nuxt: ^4.2.2
   vue: ^3.5.25
-  vue-router: ^4.6.3
+  vue-router: ^4.6.4
 
 devDependencies:
   # For linting
-  '@nuxt/eslint': ^1.11.0
-  eslint: ^9.39.1
+  '@nuxt/eslint': ^1.12.1
+  eslint: ^9.39.2
   eslint-plugin-unicorn: ^62.0.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
-  '@vitest/eslint-plugin': ^1.5.1 # ESLint rules for Vitest
+  '@vitest/eslint-plugin': ^1.5.2 # ESLint rules for Vitest
   eslint-plugin-playwright: ^2.4.0 # ESLint rules for Playwright
-  eslint-plugin-testing-library: ^7.13.5 # ESLint rules for Testing Library
+  eslint-plugin-testing-library: ^7.13.6 # ESLint rules for Testing Library
   '@eslint/eslintrc': ^3.3.3 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   yaml: ^2.8.2
 
@@ -71,14 +71,14 @@ devDependencies:
   jiti: ^2.6.1
 
   # To use Sass
-  sass-embedded: ^1.93.3
+  sass-embedded: ^1.96.0
 
   # For testing
   '@nuxt/test-utils': ^3.21.0
   '@playwright/test': ^1.57.0
   '@vue/test-utils': ^2.4.6
   '@testing-library/vue': ^8.1.0
-  jsdom: ^27.2.0
+  jsdom: ^27.3.0
   std-env: ^3.10.0
   vitest: ^3.2.4
   'monocart-reporter': ^2.9.23
@@ -89,8 +89,8 @@ devDependencies:
 
   # To enable typechecking
   typescript: ^5.9.3
-  vue-tsc: &vue-tools ^3.1.6
-  '@types/node': ^24.10.1 # Allow typechecking of node code as well
+  vue-tsc: &vue-tools ^3.1.8
+  '@types/node': ^25.0.2 # Allow typechecking of node code as well
 
   # To use Pug in Vue templates
   '@vue/language-plugin-pug': *vue-tools # Enables autocompletion for Vue components in Pug templates
