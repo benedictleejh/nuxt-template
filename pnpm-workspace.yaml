@@ -5,11 +5,11 @@ trustPolicy: no-downgrade
 trustPolicyExclude:
   - semver@6.3.1
 
-ignoredBuiltDependencies:
-  - '@parcel/watcher'
-  - esbuild
-  - sharp
-  - unrs-resolver
+allowBuilds:
+  '@parcel/watcher': false
+  esbuild: false
+  sharp: false
+  unrs-resolver: false
 
 overrides:
   # Remove any reference to @types/eslint due to conflict with ESLint's inbuilt type
