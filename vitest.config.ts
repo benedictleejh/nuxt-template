@@ -44,7 +44,7 @@ const vitestProjects = async () => {
     nuxtAppProject,
     await defineVitestProject({
       test: {
-        setupFiles: './.config/vitest.setup.ts',
+        setupFiles: 'tests/setup/index.ts',
         name: 'server',
         include: [
           'tests/server/{api,middleware,plugins,routes,utils}/*.{test,spec}.ts'

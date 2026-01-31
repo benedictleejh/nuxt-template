@@ -95,6 +95,9 @@ export default defineNuxtConfig({
         // Enable typechecking for scripts
         '../scripts/*',
 
+        // Add Vitest setup code to node tsconfig
+        '../tests/setup/**/*',
+
         // Add e2e tests to node tsconfig
         '../tests/e2e/**/*'
       ]
