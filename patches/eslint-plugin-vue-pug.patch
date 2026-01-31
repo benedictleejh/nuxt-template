@@ -1,0 +1,40 @@
+diff --git a/lib/rules/component-name-in-template-casing.js b/lib/rules/component-name-in-template-casing.js
+index 4c2a5223092cfeed217cdd87c83aa0cd800c5a44..11da1f864efd9248954622455e89ffac9a0babdf 100644
+--- a/lib/rules/component-name-in-template-casing.js
++++ b/lib/rules/component-name-in-template-casing.js
+@@ -8,9 +8,9 @@
+ // Requirements
+ // ------------------------------------------------------------------------------
+ 
+-const utils = require('eslint-plugin-vue/lib/utils')
+-const casing = require('eslint-plugin-vue/lib/utils/casing')
+-const { toRegExp } = require('eslint-plugin-vue/lib/utils/regexp')
++const utils = require('eslint-plugin-vue/dist/utils').default
++const casing = require('eslint-plugin-vue/dist/utils/casing').default
++const { toRegExp } = require('eslint-plugin-vue/dist/utils/regexp').default
+ 
+ // -----------------------------------------------------------------------------
+ // Helpers
+diff --git a/lib/rules/html-quotes.js b/lib/rules/html-quotes.js
+index e5ff4dce8d7ff86207a54854298dbb8f7ca0ea03..a4800eb14ede4d9cec1a827fafa727780b53e8d2 100644
+--- a/lib/rules/html-quotes.js
++++ b/lib/rules/html-quotes.js
+@@ -5,7 +5,7 @@
+  */
+ 'use strict'
+ 
+-const utils = require('eslint-plugin-vue/lib/utils')
++const utils = require('eslint-plugin-vue/dist/utils').default
+ 
+ module.exports = {
+   meta: {
+diff --git a/lib/rules/no-pug-control-flow.js b/lib/rules/no-pug-control-flow.js
+index 1c90290617a74b21fd8bd30802a3c4807d2acbab..acd1ce5bba8a62a90f19ce5339c0b4ccef6df723 100644
+--- a/lib/rules/no-pug-control-flow.js
++++ b/lib/rules/no-pug-control-flow.js
+@@ -1,4 +1,4 @@
+-const utils = require('eslint-plugin-vue/lib/utils')
++const utils = require('eslint-plugin-vue/dist/utils').default
+ 
+ const ILLEGAL_TOKEN_TYPES = {
+   PugCode: 'inline javascript code',

@@ -11,6 +11,10 @@ allowBuilds:
   sharp: false
   unrs-resolver: false
 
+patchedDependencies:
+  '@stylelint-types/stylelint-scss': patches/@stylelint-types__stylelint-scss.patch
+  eslint-plugin-vue-pug: patches/eslint-plugin-vue-pug.patch
+
 overrides:
   # Remove any reference to @types/eslint due to conflict with ESLint's inbuilt type
   '@types/eslint': '-'

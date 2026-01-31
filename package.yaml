@@ -5,7 +5,7 @@ type: module
 devEngines:
   packageManager:
     name: pnpm
-    version: 10.28.0+sha512.05df71d1421f21399e053fde567cea34d446fa02c76571441bfc1c7956e98e363088982d940465fd34480d4d90a0668bc12362f8aa88000a64e83d0b0e47be48
+    version: 10.28.2+sha512.41872f037ad22f7348e3b1debbaf7e867cfd448f2726d9cf74c08f19507c31d2c8e7a11525b983febc2df640b5438dee6023ebb1f84ed43cc2d654d2bc326264
     onFail: download
 
 engines:
@@ -45,24 +45,24 @@ scripts:
   pnpm:devPreinstall: pnpm compile:packageJson
 
 dependencies:
-  '@nuxt/fonts': ^0.12.1
+  '@nuxt/fonts': ^0.13.0
   '@nuxt/image': ^2.0.0
 
   vue-dompurify-html: ^5.3.0
   isomorphic-dompurify: ^2.35.0
 
-  nuxt: ^4.2.2
-  vue: ^3.5.26
+  nuxt: ^4.3.0
+  vue: ^3.5.27
   vue-router: ^4.6.4
 
 devDependencies:
   # For linting
-  '@nuxt/eslint': ^1.12.1
+  '@nuxt/eslint': ^1.13.0
   eslint: ^9.39.2
   eslint-plugin-unicorn: ^62.0.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
   '@vitest/eslint-plugin': ^1.6.6 # ESLint rules for Vitest
-  eslint-plugin-playwright: ^2.4.1 # ESLint rules for Playwright
+  eslint-plugin-playwright: ^2.5.0 # ESLint rules for Playwright
   eslint-plugin-testing-library: ^7.15.4 # ESLint rules for Testing Library
   '@eslint/eslintrc': ^3.3.3 # To convert eslint-plugin-vue-pug to new ESLint flat config format
   yaml: ^2.8.2
@@ -71,11 +71,11 @@ devDependencies:
   jiti: ^2.6.1
 
   # To use Sass
-  sass-embedded: ^1.97.2
+  sass-embedded: ^1.97.3
 
   # For testing
   '@nuxt/test-utils': ^3.23.0
-  '@playwright/test': ^1.57.0
+  '@playwright/test': ^1.58.0
   '@vue/test-utils': ^2.4.6
   '@testing-library/vue': ^8.1.0
   jsdom: ^27.4.0
@@ -89,7 +89,7 @@ devDependencies:
 
   # To enable typechecking
   typescript: ^5.9.3
-  vue-tsc: &vue-tools ^3.2.2
+  vue-tsc: &vue-tools ^3.2.3
   '@types/node': ^24.10.6 # Allow typechecking of node code as well
 
   # To use Pug in Vue templates
@@ -98,13 +98,13 @@ devDependencies:
 
   # For linting stylesheets
   '@nuxtjs/stylelint-module': ^5.2.1
-  stylelint: ^16.26.1
-  stylelint-define-config: ^16.26.0
-  '@stylelint-types/stylelint-scss': ^6.11.0
-  '@stylelint-types/stylelint-stylistic': ^3.1.3
-  stylelint-config-standard-scss: ^16.0.0
+  stylelint: ^17.0.0
+  stylelint-define-config: ^17.0.0
+  '@stylelint-types/stylelint-scss': ^7.0.0
+  '@stylelint-types/stylelint-stylistic': ^5.0.0
+  stylelint-config-standard-scss: ^17.0.0
   stylelint-config-standard-vue: ^1.0.0
-  '@stylistic/stylelint-config': ^3.0.1
+  '@stylistic/stylelint-config': ^4.0.0
   # Use SugarSS as a pseudo-sass parser due to postcss-sass not working with media queries
   postcss-sass: npm:sugarss@latest
-  postcss-html: ^1.8.0
+  postcss-html: ^1.8.1

@@ -2,6 +2,14 @@ import { defineConfig as defineStylelintConfig } from 'stylelint-define-config'
 
 export const css = defineStylelintConfig({
   rules: {
+    'no-invalid-position-declaration': [
+      true,
+      {
+        ignoreAtRules: [
+          'mixin'
+        ]
+      }
+    ],
     'unit-no-unknown': true,
     'function-url-no-scheme-relative': true,
     'font-weight-notation': 'numeric',

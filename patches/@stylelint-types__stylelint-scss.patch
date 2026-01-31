@@ -1,0 +1,17 @@
+diff --git a/lib/index.d.ts b/lib/index.d.ts
+index 72c1b891009432a6f06b7d0db67c4a576e116f18..0b09e8dc8efb6a3b348c3cbedd13456add9773e0 100644
+--- a/lib/index.d.ts
++++ b/lib/index.d.ts
+@@ -101,7 +101,11 @@ type CommentNoEmptyOptions = RuleConfig<true>
+ type CommentNoLoudOptions = RuleConfig<true>
+ 
+ type DeclarationNestedPropertiesOptions = RuleConfig<
+-  'always' | 'never'
++  'always' | 'never',
++  [],
++  {
++    except: ["only-of-namespace"]
++  }
+ >
+ 
+ type DeclarationNestedPropertiesNoDividedGroupsOptions = RuleConfig<true>
