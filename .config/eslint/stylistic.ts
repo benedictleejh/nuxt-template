@@ -78,7 +78,10 @@ export const stylistic = defineFlatConfigs(
       ],
       '@stylistic/curly-newline': [
         'error',
-        'always'
+        {
+          multiline: true,
+          consistent: true
+        }
       ],
       '@stylistic/eol-last': 'error',
       '@stylistic/function-call-argument-newline': [
