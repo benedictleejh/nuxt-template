@@ -1,3 +1,5 @@
+import path from 'node:path'
+
 import { defineVitestProject } from '@nuxt/test-utils/config'
 import { defineConfig as defineVitestConfig } from 'vitest/config'
 
@@ -43,6 +45,12 @@ const vitestProjects = async () => {
     },
     nuxtAppProject,
     await defineVitestProject({
+      // Workaround for https://github.com/nuxt/test-utils/issues/1490
+      resolve: {
+        alias: {
+          'bun:test': path.resolve('./vitest.config.ts')
+        }
+      },
       test: {
         setupFiles: 'tests/setup/index.ts',
         name: 'server',
