@@ -49,11 +49,11 @@ dependencies:
   '@nuxt/image': ^2.0.0
 
   vue-dompurify-html: ^5.3.0
-  isomorphic-dompurify: ^3.0.0
+  isomorphic-dompurify: ^3.3.0
 
-  nuxt: ^4.3.1
-  vue: ^3.5.29
-  vue-router: ^4.6.4
+  nuxt: ^4.4.2
+  vue: ^3.5.30
+  vue-router: ^5.0.3
 
 devDependencies:
   # For linting
@@ -61,7 +61,7 @@ devDependencies:
   eslint: ^10.0.3
   eslint-plugin-unicorn: ^63.0.0
   eslint-plugin-vue-pug: ^0.6.2 # ESLint rules for Pug
-  '@vitest/eslint-plugin': ^1.6.9 # ESLint rules for Vitest
+  '@vitest/eslint-plugin': ^1.6.12 # ESLint rules for Vitest
   eslint-plugin-playwright: ^2.9.0 # ESLint rules for Playwright
   eslint-plugin-testing-library: ^7.16.0 # ESLint rules for Testing Library
   '@eslint/eslintrc': ^3.3.5 # To convert eslint-plugin-vue-pug to new ESLint flat config format
@@ -71,7 +71,7 @@ devDependencies:
   jiti: ^2.6.1
 
   # To use Sass
-  sass-embedded: ^1.97.3
+  sass-embedded: ^1.98.0
 
   # For testing
   '@nuxt/test-utils': ^4.0.0
@@ -79,13 +79,13 @@ devDependencies:
   '@vue/test-utils': ^2.4.6
   '@testing-library/vue': ^8.1.0
   jsdom: ^28.1.0
-  std-env: ^3.10.0
+  std-env: ^4.0.0
   vitest: ^4.0.18
   'monocart-reporter': ^2.10.0
 
   # For code quality checks on pre-commit
   husky: ^9.1.7
-  lint-staged: ^16.3.2
+  lint-staged: ^16.3.3
 
   # To enable typechecking
   typescript: ^5.9.3
@@ -94,7 +94,7 @@ devDependencies:
 
   # To use Pug in Vue templates
   '@vue/language-plugin-pug': *vue-tools # Enables autocompletion for Vue components in Pug templates
-  pug: ^3.0.3
+  pug: ^3.0.4
 
   # For linting stylesheets
   '@nuxtjs/stylelint-module': ^5.2.1

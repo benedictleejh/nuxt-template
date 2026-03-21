@@ -44,6 +44,17 @@ const vitestProjects = async () => {
       }
     },
     nuxtAppProject,
+    {
+      // TODO: remove when Nuxt Test Utils provides a way to automatically add this to the project
+      resolve: nuxtAppProject.resolve,
+      test: {
+        name: 'server:api',
+        include: [
+          'tests/server/api/*.{test,spec}.ts'
+        ],
+        environment: 'node'
+      }
+    },
     await defineVitestProject({
       // Workaround for https://github.com/nuxt/test-utils/issues/1490
       resolve: {
@@ -55,7 +66,7 @@ const vitestProjects = async () => {
         setupFiles: 'tests/setup/index.ts',
         name: 'server',
         include: [
-          'tests/server/{api,middleware,plugins,routes,utils}/*.{test,spec}.ts'
+          'tests/server/{middleware,plugins,routes,utils}/*.{test,spec}.ts'
         ],
         environment: 'nuxt',
         environmentOptions: {
